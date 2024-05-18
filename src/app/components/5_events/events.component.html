@@ -1,0 +1,17 @@
+<div class="newConcept">
+  <h2>Eventos</h2>
+  <!-- Um botão para apresentar ou esconder (toggler) uma mensagem -->
+  <button (click)="showMessage()">Clique no evento</button>
+
+  <p *ngIf="show">Exibindo ou escondendo mensagem!</p>
+</div>
+
+<div class="newConcept">
+  <h2>{{ 'evento sendo emitido' | titlecase }}</h2>
+
+  <!-- Exibir um numero aleatorio baseado no que é emitido pelo componente fillho -->
+  <h4>O numero é: {{ myNumber }}</h4>
+
+  <!-- evento emitido pelo componente filho -->
+  <app-emitter (handleNumber)="onHandleNumber()"></app-emitter>
+</div>

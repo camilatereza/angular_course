@@ -1,0 +1,10 @@
+<div class="newConcept">
+  <h2>{{ 'Requisição HTTP' | titlecase }}</h2>
+
+  <ul>
+    <li *ngFor="let a of animals">
+      Nome: <a routerLink="/list/{{ a.id }}">{{ a.name }}</a> <br />
+      - Tipo: {{ a.type }} <br />
+    </li>
+  </ul>
+</div>

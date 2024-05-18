@@ -1,0 +1,18 @@
+<div class="newConcept">
+  <h2>{{ 'condicionais' | titlecase }}</h2>
+
+  <div *ngIf="canShow">Está sendo apresentado porque o boolean é true</div>
+
+  <h4 *ngIf="name == 'Matheus'">O nome é Matheus</h4>
+  <!-- Não será apresentado -->
+  <h4 *ngIf="nameJ == 'João'">O nome é João</h4>
+
+  <!-- Com validação e dado se não achado -->
+  <h4 *ngIf="name == 'João'; else nameNotFound">O nome é João</h4>
+
+  <ng-template #nameNotFound>
+    <div>
+      <h4>O nome não foi encontrado</h4>
+    </div>
+  </ng-template>
+</div>

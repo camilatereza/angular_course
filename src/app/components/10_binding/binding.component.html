@@ -1,0 +1,17 @@
+<div class="newConcept">
+  <h2>{{ 'two way data binding' | titlecase }}</h2>
+
+  <!-- mapear o atributo do componente e poder usar em outros lugares -->
+  <form>
+    <input
+      type="text"
+      [(ngModel)]="name"
+      name="input"
+      placeholder="Digite seu nome"
+    />
+    <input type="submit" value="Enviar" />
+  </form>
+
+  <!-- Usando o atributo automaticamente com condicional se não estiver vazio -->
+  <p *ngIf="name != ''">O nome é: {{ name }}</p>
+</div>

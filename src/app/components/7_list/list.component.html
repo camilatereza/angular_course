@@ -1,0 +1,48 @@
+<!-- --------------------------------Lista------------------------------------------------- -->
+
+<div class="newConcept">
+  <h2>{{ 'manipulação de listas' | titlecase }}</h2>
+
+  <h4>Animais</h4>
+
+  <!-- Apresentar dado a dado que está na lista -->
+  <ul>
+    <li *ngFor="let a of animals">
+      Nome: {{ a.name }}
+      <br />
+      Tipo: {{ a.type }}
+    </li>
+  </ul>
+
+  <!-- --------------------------------Com interface------------------------------------------------- -->
+
+  <div class="newConcept" style="margin-top: 30px">
+    <h2>{{ 'Manipulação de lista com interface' | titlecase }}</h2>
+
+    <h4>Animais</h4>
+
+    <!-- Apresentar dado da lista viculada a interface -->
+    <ul>
+      <li *ngFor="let a of animalsClass">
+        Nome: {{ a.name }} - Tipo: {{ a.type }}<br />
+        <button (click)="showAge(a)">Show age</button>
+      </li>
+    </ul>
+    <p>{{ animalDetails }}</p>
+  </div>
+</div>
+
+<!-- ---------------------------------Service------------------------------------------------ -->
+
+<div class="newConcept">
+  <h2>{{ 'utilizando services' | titlecase }}</h2>
+
+  <ul>
+    <li *ngFor="let a of animalsClass">
+      Nome: {{ a.name }} - Tipo: {{ a.type }} <br />
+      <button (click)="showAge(a)">Show age</button>
+      <button (click)="removeAnimal(a)">Excluir animal</button>
+    </li>
+  </ul>
+  <p>{{ animalDetails }}</p>
+</div>

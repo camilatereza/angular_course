@@ -1,0 +1,17 @@
+<!-- Precisa criar uma rota para o componente -->
+<!-- list/:id para buscar pelo id -->
+
+<!-- Fazer com que na tela de listagem dos animais que vem do banco
+  gere um link no nome para os detalhes aqui -->
+
+<div class="newConcept">
+  <h2>{{ 'rota adaptada para dado individual' | titlecase }}</h2>
+
+  <p *ngIf="animal">
+    ID: {{ animal.id }} <br />
+    <br />
+    O {{ animal.name }} é um {{ animal.type }} e tem {{ animal.age }} anos
+    <br />
+    <button (click)="remove(animal)">Excluir animal</button>
+  </p>
+</div>

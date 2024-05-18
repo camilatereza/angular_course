@@ -1,0 +1,48 @@
+<div class="newConcept">
+  <p>header</p>
+
+  <!-- navegador para transitar entre as rotas -->
+  <nav>
+    <a routerLink="/">Home</a>
+    <a routerLink="/list">Listas</a>
+    <a routerLink="/db">With http</a>
+  </nav>
+
+  <h2>{{ 'trabalhando com rotas' | titlecase }}</h2>
+  <!-- precisa declarar onde vai ser alterada as rotas do template para alternar entre views -->
+  <!-- serve de roteador, também -->
+  <router-outlet></router-outlet>
+
+  <p>footer</p>
+</div>
+
+<div class="newConcept" style="margin-top: 500px">
+  <!-- Arquivo de template, mostra tudo na tela -->
+  <h1>Hello World</h1>
+
+  <!-- Para importar e usar um componente que criei -->
+  <app-first></app-first>
+
+  <p>P com cor diferente do componente, provando a separação de css</p>
+
+  <!-- Pai compartilha dado para o filho -->
+  <app-share [name]="userName" [login]="userLogin"></app-share>
+
+  <!-- diretivas -->
+  <app-directives></app-directives>
+
+  <!-- Condicionais -->
+  <app-conditional></app-conditional>
+
+  <!-- Eventos -->
+  <app-events></app-events>
+
+  <!-- Renderizando listas -->
+  <app-list></app-list>
+
+  <!-- Manipulação de string (pipes) -->
+  <app-pipes></app-pipes>
+
+  <!-- Dados de formulario e importação de modulo (app.module) -->
+  <app-binding></app-binding>
+</div>

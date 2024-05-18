@@ -1,0 +1,11 @@
+p {
+  color: red;
+  padding: 5px;
+}
+
+/* o . define uma classe */
+.title {
+  background-color: yellow;
+  color: black;
+  padding: 15px;
+}

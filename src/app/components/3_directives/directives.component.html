@@ -1,0 +1,17 @@
+<div class="newConcept">
+  <h2>{{ 'diretivas' | titlecase }}</h2>
+
+  <!-- Ela vai aplicar estilos in line (condicional) -->
+  <h4 [ngStyle]="{ 'font-size': '12px' }">Testando diretivas de estilo</h4>
+
+  <!-- Por meio de propriedades -->
+  <p [ngStyle]="{ 'font-size': size + 'px', color }">Com propriedade</p>
+
+  <hr />
+  <!-- Diretivas de classe -->
+  <h4 [ngClass]="classes">Diretiva de classes em array</h4>
+
+  <h4 [ngClass]="classes[0]">Diretiva de classe em array especifica</h4>
+
+  <h4 [ngClass]="underline">Diretiva de classe underline</h4>
+</div>

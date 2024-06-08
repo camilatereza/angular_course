@@ -130,6 +130,9 @@ No arquivo inicial alguns links são dados: <br />
 -> Todos os arquivos necessários serão criados no projeto <br />
 -> Para importar um componente em outro: <br />
 &emsp; Utilizar o selector dele no outro compo <br />
+-> Para criar as paginas o ideal é separar em módulos <br />
+&emsp; ng g module "nome" --routing (para criar com o arquivo de rotas) <br />
+&emsp; ng g component "nomeModulo"/"nomeComponente" <br />
 
 <h2>1- Interpolação de dados (first)</h2>
 Tecnica de pegar uma variavel do componente e apresentar na tela (template, html...) <br />

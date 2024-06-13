@@ -1,15 +1,18 @@
 # Curso Front
 
-### Aprender conceitos iniciais de Angular
+### Projeto para Aprender conceitos iniciais e básicos do Angular
 
 **Para rodar:**
 
-No git bash: (rodar o front)
--> ng serve
-
-No cmd: (rodar o "banco")
--> npm run serve
-
+<ul>
+  <li>No git bash: (rodar o front) <br>
+  -> ng serve
+  </li>
+  <li>
+  No cmd: (rodar o "banco") <br>
+  -> npm run serve
+  </li>
+</ul>
 ---
 
 ## Curso feito pelo canal **Hora de Codar**
